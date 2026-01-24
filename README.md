@@ -12,40 +12,40 @@ An MCP server fallback plugin is available for cases where context usage is not 
 
 ## Available Plugins
 
-| Plugin                     | Description                                                        |
-| -------------------------- | ------------------------------------------------------------------ |
-| `thai-tools`               | Thai language tools skills                                         |
-| `thai-food-dictionary`     | Thai food dictionary skills                                        |
-| `thai-food-encyclopedia`   | Thai food encyclopedia skills                                      |
-| `thai-cook-book-library`   | Thai cookbook library skills                                       |
-| `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern)           |
-| `khao-pad-dev-mcp-servers` | Recommended MCP servers for khao-pad based web dev |
+| Plugin                     | Description                                              |
+| -------------------------- | -------------------------------------------------------- |
+| `thai-tools`               | Thai language tools skills                               |
+| `thai-food-dictionary`     | Thai food dictionary skills                              |
+| `thai-food-encyclopedia`   | Thai food encyclopedia skills                            |
+| `thai-cook-book-library`   | Thai cookbook library skills                             |
+| `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern) |
+| `khao-pad-dev-mcp-servers` | Recommended MCP servers for khao-pad based web dev       |
 
 ## Installation
 
 ### Add the Marketplace
 
 ```bash
-/plugin marketplace add https://github.com/Der-Reiskoch/ahaan-thai-claude-code-marketplace
+claude plugin marketplace add https://github.com/Der-Reiskoch/ahaan-thai-claude-code-marketplace
 ```
 
 ### Install a Plugin
 
 ```bash
-/plugin install thai-tools
-/plugin install thai-food-dictionary
-/plugin install thai-food-encyclopedia
-/plugin install thai-cook-book-library
+claude plugin install thai-tools@ahaan-thai-plugins --scope project
+claude plugin install thai-food-dictionary@ahaan-thai-plugins --scope project
+claude plugin install thai-food-encyclopedia@ahaan-thai-plugins --scope project
+claude plugin install thai-cook-book-library@ahaan-thai-plugins --scope project
 ```
 
 Or for the MCP fallback (when context usage doesn't matter):
 
 ```bash
-/plugin install ahaan-thai-mcp-servers
+claude plugin install ahaan-thai-mcp-servers@ahaan-thai-plugins --scope project
 ```
 
 Or for the khao-pad web development MCP servers:
 
 ```bash
-/plugin install khao-pad-dev-mcp-servers
+claude plugin install khao-pad-dev-mcp-servers@ahaan-thai-plugins --scope project
 ```
