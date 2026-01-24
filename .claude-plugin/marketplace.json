@@ -1,0 +1,30 @@
+{
+  "name": "ahaan-thai-plugins",
+  "owner": {
+    "name": "Der Reiskoch"
+  },
+  "metadata": {
+    "description": "A collection of Claude Code plugins for working with thai food & recipes",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "ahaan-thai-mcp-servers",
+      "version": "0.0.1",
+      "source": "./plugins/ahaan-thai-mcp-servers",
+      "description": "Adds the ahaan-thai.de mcp servers to your project"
+    },
+    {
+      "name": "thai-food-dictionary",
+      "version": "0.0.1",
+      "source": "./plugins/thai-food-dictionary",
+      "description": "Adds thai food dictionary skills to your project"
+    },
+    {
+      "name": "thai-tools",
+      "version": "0.0.2",
+      "source": "./plugins/thai-tools",
+      "description": "Adds some thai skills and commands to your project"
+    }
+  ]
+}
