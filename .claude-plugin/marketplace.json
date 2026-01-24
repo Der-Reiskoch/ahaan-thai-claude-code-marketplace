@@ -21,6 +21,18 @@
       "description": "Adds thai food dictionary skills to your project"
     },
     {
+      "name": "thai-food-encyclopedia",
+      "version": "0.0.1",
+      "source": "./plugins/thai-food-encyclopedia",
+      "description": "Adds the thai food encyclopedia mcp server to your project"
+    },
+    {
+      "name": "thai-cook-book-library",
+      "version": "0.0.1",
+      "source": "./plugins/thai-cook-book-library",
+      "description": "Adds the thai cookbook library mcp server to your project"
+    },
+    {
       "name": "thai-tools",
       "version": "0.0.2",
       "source": "./plugins/thai-tools",
