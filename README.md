@@ -49,3 +49,9 @@ Or for the khao-pad web development MCP servers:
 ```bash
 claude plugin install khao-pad-dev-mcp-servers@ahaan-thai-plugins --scope project
 ```
+
+## Tests (Live Endpoints)
+
+```bash
+bash scripts/tests/run-live-smoke-tests.sh
+```

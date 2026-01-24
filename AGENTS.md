@@ -33,7 +33,7 @@ This repo is configuration- and script-driven; there is no centralized build or 
 
 ## Testing Guidelines
 
-- There is no automated test suite. Validate changes by running the relevant scripts and ensuring JSON outputs parse correctly.
+- Run the live smoke tests with `bash scripts/tests/run-live-smoke-tests.sh` (requires `curl`, `jq`, and `python3`).
 - If adding new scripts, include a short usage example in the associated `SKILL.md`.
 
 ## Commit & Pull Request Guidelines
