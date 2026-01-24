@@ -10,33 +10,39 @@
   "plugins": [
     {
       "name": "ahaan-thai-mcp-servers",
-      "version": "0.0.1",
+      "version": "0.0.3",
       "source": "./plugins/ahaan-thai-mcp-servers",
-      "description": "Adds the ahaan-thai.de mcp servers to your project"
+      "description": "MCP servers fallback - use when context usage is not a concern"
     },
     {
       "name": "thai-food-dictionary",
-      "version": "0.0.1",
+      "version": "0.0.3",
       "source": "./plugins/thai-food-dictionary",
       "description": "Adds thai food dictionary skills to your project"
     },
     {
       "name": "thai-food-encyclopedia",
-      "version": "0.0.1",
+      "version": "0.0.3",
       "source": "./plugins/thai-food-encyclopedia",
-      "description": "Adds the thai food encyclopedia mcp server to your project"
+      "description": "Adds thai food encyclopedia skills to your project"
     },
     {
       "name": "thai-cook-book-library",
-      "version": "0.0.1",
+      "version": "0.0.3",
       "source": "./plugins/thai-cook-book-library",
-      "description": "Adds the thai cookbook library mcp server to your project"
+      "description": "Adds thai cookbook library skills to your project"
     },
     {
       "name": "thai-tools",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "source": "./plugins/thai-tools",
-      "description": "Adds some thai skills and commands to your project"
+      "description": "Adds thai language tools skills to your project"
+    },
+    {
+      "name": "khao-pad-dev-mcp-servers",
+      "version": "0.0.1",
+      "source": "./plugins/khao-pad-dev-mcp-servers",
+      "description": "Recommended MCP servers for khao-pad based web dev"
     }
   ]
 }

@@ -22,6 +22,8 @@ When creating new plugins:
 - You need the full flexibility of the MCP protocol
 - Script-based skills would be too limiting for the use case
 
+**Specialized MCP servers**: The `khao-pad-dev-mcp-servers` plugin provides Recommended MCP servers for khao-pad based web dev.
+
 ## Architecture
 
 ### Marketplace Structure
@@ -40,13 +42,14 @@ plugins/                           # Individual plugin directories
 
 ### Available Plugins
 
-| Plugin                   | Description                                                          |
-| ------------------------ | -------------------------------------------------------------------- |
-| `thai-tools`             | General Thai language skills (e.g., ask-clickthai dictionary lookup) |
-| `thai-food-dictionary`   | Thai food term lookups via ahaan-thai.de                             |
-| `thai-food-encyclopedia` | Thai food encyclopedia access                                        |
-| `thai-cook-book-library` | Thai cookbook and recipe library                                     |
-| `ahaan-thai-mcp-servers` | MCP servers fallback (use when context is not a concern)             |
+| Plugin                     | Description                                                        |
+| -------------------------- | ------------------------------------------------------------------ |
+| `thai-tools`               | Thai language tools skills                                         |
+| `thai-food-dictionary`     | Thai food dictionary skills                                        |
+| `thai-food-encyclopedia`   | Thai food encyclopedia skills                                      |
+| `thai-cook-book-library`   | Thai cookbook library skills                                       |
+| `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern)           |
+| `khao-pad-dev-mcp-servers` | Recommended MCP servers for khao-pad based web dev |
 
 ### Plugin Structure
 

@@ -12,13 +12,14 @@ An MCP server fallback plugin is available for cases where context usage is not 
 
 ## Available Plugins
 
-| Plugin                   | Description                                                          |
-| ------------------------ | -------------------------------------------------------------------- |
-| `thai-tools`             | General Thai language skills (e.g., ask-clickthai dictionary lookup) |
-| `thai-food-dictionary`   | Thai food term lookups via ahaan-thai.de                             |
-| `thai-food-encyclopedia` | Thai food encyclopedia access                                        |
-| `thai-cook-book-library` | Thai cookbook and recipe library                                     |
-| `ahaan-thai-mcp-servers` | MCP servers fallback (use when context is not a concern)             |
+| Plugin                     | Description                                                        |
+| -------------------------- | ------------------------------------------------------------------ |
+| `thai-tools`               | Thai language tools skills                                         |
+| `thai-food-dictionary`     | Thai food dictionary skills                                        |
+| `thai-food-encyclopedia`   | Thai food encyclopedia skills                                      |
+| `thai-cook-book-library`   | Thai cookbook library skills                                       |
+| `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern)           |
+| `khao-pad-dev-mcp-servers` | Recommended MCP servers for khao-pad based web dev |
 
 ## Installation
 
@@ -41,4 +42,10 @@ Or for the MCP fallback (when context usage doesn't matter):
 
 ```bash
 /plugin install ahaan-thai-mcp-servers
+```
+
+Or for the khao-pad web development MCP servers:
+
+```bash
+/plugin install khao-pad-dev-mcp-servers
 ```
