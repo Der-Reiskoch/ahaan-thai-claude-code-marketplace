@@ -2,6 +2,14 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Basic Rules
+
+- Ask questions if anything is uncertain, do not make any assumptions!
+- Ask those questions in a numbered List, so that the user can address them easily
+- plan before you implement!
+- do not commit anything without permission by the user
+- update your internal documentation after you finished a task
+
 ## Overview
 
 This is a Claude Code marketplace repository containing plugins for working with Thai food and recipes. The marketplace provides plugins that can be installed via Claude Code's plugin system.
@@ -28,7 +36,7 @@ When creating new plugins:
 
 ### Marketplace Structure
 
-```
+```bash
 .claude-plugin/marketplace.json    # Marketplace definition with available plugins
 plugins/                           # Individual plugin directories
   └── <plugin-name>/
@@ -37,27 +45,29 @@ plugins/                           # Individual plugin directories
       └── skills/                     # User-invocable skills
           └── <skill-name>/
               ├── SKILL.md            # Skill definition with instructions
-              └── scripts/            # Shell/Python scripts for API calls
+              ├── scripts/            # Shell/Python scripts for API calls
+              └── resources/          # Reference documentation (Markdown)
 ```
 
 ### Available Plugins
 
-| Plugin                     | Description                                                        |
-| -------------------------- | ------------------------------------------------------------------ |
-| `thai-tools`               | Thai language tools skills                                         |
-| `thai-food-dictionary`     | Thai food dictionary skills                                        |
-| `thai-food-encyclopedia`   | Thai food encyclopedia skills                                      |
-| `thai-cook-book-library`   | Thai cookbook library skills                                       |
-| `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern)           |
-| `khao-pad-dev-mcp-servers` | Recommended MCP servers for khao-pad based web dev |
+| Plugin                     | Description                                              |
+| -------------------------- | -------------------------------------------------------- |
+| `thai-tools`               | Thai language tools skills                               |
+| `thai-food-dictionary`     | Thai food dictionary skills                              |
+| `thai-food-encyclopedia`   | Thai food encyclopedia skills                            |
+| `thai-cook-book-library`   | Thai cookbook library skills                             |
+| `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern) |
+| `khao-pad-dev-mcp-servers` | Recommended MCP servers for khao-pad based web dev       |
+| `khao-pad-dev-skills`      | Khao-pad web development skills (UI components & CSS)    |
 
 ### Plugin Structure
 
-Each plugin uses script-based skills:
+Each plugin provides skills in one of two patterns:
 
 - **Commands**: `commands/<name>.md` - Simple slash commands
-- **Skills**: `skills/<name>/SKILL.md` - Skills with instructions and scripts in `scripts/` subdirectory
-- **Scripts**: Shell (`.sh`) or Python (`.py`) scripts that call external APIs
+- **Script-based skills**: `skills/<name>/SKILL.md` with executable scripts in `scripts/` subdirectory (Shell `.sh` or Python `.py`)
+- **Knowledge-based skills**: `skills/<name>/SKILL.md` with reference documentation in `resources/` subdirectory (Markdown `.md`)
 
 ### Key Files
 

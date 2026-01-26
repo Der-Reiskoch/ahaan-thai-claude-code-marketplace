@@ -20,6 +20,7 @@ An MCP server fallback plugin is available for cases where context usage is not 
 | `thai-cook-book-library`   | Thai cookbook library skills                             |
 | `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern) |
 | `khao-pad-dev-mcp-servers` | Recommended MCP servers for khao-pad based web dev       |
+| `khao-pad-dev-skills`      | Khao-pad web development skills (UI components & CSS)    |
 
 ## Installation
 
@@ -48,6 +49,12 @@ Or for the khao-pad web development MCP servers:
 
 ```bash
 claude plugin install khao-pad-dev-mcp-servers@ahaan-thai-plugins --scope project
+```
+
+Or for khao-pad web development skills (UI components & CSS styling):
+
+```bash
+claude plugin install khao-pad-dev-skills@ahaan-thai-plugins --scope project
 ```
 
 ## Tests (Live Endpoints)
