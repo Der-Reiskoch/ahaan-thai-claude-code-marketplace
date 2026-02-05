@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest",
+        "--headless=true",
+        "--isolated=true"
+      ]
+    },
+    "khao-ui-storybook": {
+      "command": "npx",
+      "args": ["-y", "storybook-mcp"],
+      "env": {
+        "STORYBOOK_URL": "https://khao-ui-tools.github.io/khao-ui/storybook/index.json"
+      }
+    }
+  }
+}

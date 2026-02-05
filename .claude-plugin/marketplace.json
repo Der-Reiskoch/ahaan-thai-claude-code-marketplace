@@ -1,0 +1,60 @@
+{
+  "name": "ahaan-thai-plugins",
+  "owner": {
+    "name": "Der Reiskoch"
+  },
+  "metadata": {
+    "description": "A collection of Claude Code plugins for working with thai food & recipes",
+    "version": "0.3.0"
+  },
+  "plugins": [
+    {
+      "name": "ahaan-thai-mcp-servers",
+      "version": "0.0.3",
+      "source": "./plugins/ahaan-thai-mcp-servers",
+      "description": "MCP servers fallback - use when context usage is not a concern"
+    },
+    {
+      "name": "thai-food-dictionary",
+      "version": "0.0.4",
+      "source": "./plugins/thai-food-dictionary",
+      "description": "Adds thai food dictionary skills to your project"
+    },
+    {
+      "name": "thai-food-encyclopedia",
+      "version": "0.0.4",
+      "source": "./plugins/thai-food-encyclopedia",
+      "description": "Adds thai food encyclopedia skills to your project"
+    },
+    {
+      "name": "thai-cook-book-library",
+      "version": "0.0.4",
+      "source": "./plugins/thai-cook-book-library",
+      "description": "Adds thai cookbook library skills to your project"
+    },
+    {
+      "name": "khao-pad-dev-mcp-servers",
+      "version": "0.0.1",
+      "source": "./plugins/khao-pad-dev-mcp-servers",
+      "description": "Recommended MCP servers for khao-pad based web dev"
+    },
+    {
+      "name": "khao-pad-dev-skills",
+      "version": "0.0.2",
+      "source": "./plugins/khao-pad-dev-skills",
+      "description": "Adds khao-pad web development skills to your project"
+    },
+    {
+      "name": "todo-skills",
+      "version": "0.0.2",
+      "source": "./plugins/todo-skills",
+      "description": "Agent todo file management skills"
+    },
+    {
+      "name": "skill-sharing",
+      "version": "0.0.3",
+      "source": "./plugins/skill-sharing",
+      "description": "Share Claude Code skills with other AI agents"
+    }
+  ]
+}
