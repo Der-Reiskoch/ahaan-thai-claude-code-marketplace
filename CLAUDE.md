@@ -87,8 +87,6 @@ plugins/                           # Individual plugin directories
 | `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern) |
 | `khao-pad-dev-mcp-servers` | Recommended MCP servers for khao-pad based web dev       |
 | `khao-pad-dev-skills`      | Khao-pad web development skills (UI components & CSS)    |
-| `todo-skills`              | Agent todo file management skills                        |
-| `skill-sharing`            | Share Claude Code skills with other AI agents            |
 
 ### Plugin Structure
 

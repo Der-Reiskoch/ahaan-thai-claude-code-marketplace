@@ -43,18 +43,6 @@
       "version": "0.0.2",
       "source": "./plugins/khao-pad-dev-skills",
       "description": "Adds khao-pad web development skills to your project"
-    },
-    {
-      "name": "todo-skills",
-      "version": "0.0.2",
-      "source": "./plugins/todo-skills",
-      "description": "Agent todo file management skills"
-    },
-    {
-      "name": "skill-sharing",
-      "version": "0.0.3",
-      "source": "./plugins/skill-sharing",
-      "description": "Share Claude Code skills with other AI agents"
     }
   ]
 }
