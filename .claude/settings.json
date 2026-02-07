@@ -1,6 +1,7 @@
 {
   "enabledPlugins": {
-    "skill-sharing@ahaan-thai-plugins": true,
-    "todo-skills@ahaan-thai-plugins": true
+    "agent-todos@ji-agent-skills": true,
+    "plugin-dev@claude-plugins-official": true,
+    "skill-teaching@ji-agent-skills": true
   }
 }

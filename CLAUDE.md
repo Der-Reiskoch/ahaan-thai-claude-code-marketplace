@@ -58,8 +58,6 @@ When creating new plugins:
 - You need the full flexibility of the MCP protocol
 - Script-based skills would be too limiting for the use case
 
-**Specialized MCP servers**: The `khao-pad-dev-mcp-servers` plugin provides Recommended MCP servers for khao-pad based web dev.
-
 ## Architecture
 
 ### Marketplace Structure
@@ -85,8 +83,6 @@ plugins/                           # Individual plugin directories
 | `thai-food-encyclopedia`   | Thai food encyclopedia skills                            |
 | `thai-cook-book-library`   | Thai cookbook library skills                             |
 | `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern) |
-| `khao-pad-dev-mcp-servers` | Recommended MCP servers for khao-pad based web dev       |
-| `khao-pad-dev-skills`      | Khao-pad web development skills (UI components & CSS)    |
 
 ### Plugin Structure
 

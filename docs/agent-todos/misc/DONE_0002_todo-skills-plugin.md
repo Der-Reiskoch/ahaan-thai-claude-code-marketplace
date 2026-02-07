@@ -1,4 +1,7 @@
-# Create Todo Skills Plugin
+---
+title: Todo skills plugin
+status: done
+---
 
 ## Problem / Context
 

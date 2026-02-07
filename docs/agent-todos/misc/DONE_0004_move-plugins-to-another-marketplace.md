@@ -1,4 +1,7 @@
-# Move Plugin to another marketplace
+---
+title: Move plugins to another marketplace
+status: done
+---
 
 ## Context
 

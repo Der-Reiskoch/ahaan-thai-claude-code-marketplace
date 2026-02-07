@@ -1,4 +1,7 @@
-# Make plugin from external skill
+---
+title: Make plugin from external skill
+status: done
+---
 
 ## Tasks
 

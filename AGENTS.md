@@ -18,7 +18,7 @@ Instead, use **skills**:
 - **Knowledge-based skills**: `SKILL.md` files with reference documentation in a `resources/` subdirectory that provide guidelines and constraints
 - Both types are only invoked when explicitly needed, keeping context clean
 
-The `ahaan-thai-mcp-servers` plugin exists as a fallback for users who don't care about context usage and need full MCP flexibility. MCP servers work well and are more flexible than tailored scripts, but they always consume context even when idle. The `khao-pad-dev-mcp-servers` plugin provides Recommended MCP servers for khao-pad based web dev. The `khao-pad-dev-skills` plugin provides knowledge-based skills for khao-pad web development, covering Khao UI components and CSS styling with the Khao Malet design system.
+The `ahaan-thai-mcp-servers` plugin exists as a fallback for users who don't care about context usage and need full MCP flexibility. MCP servers work well and are more flexible than tailored scripts, but they always consume context even when idle.
 
 ## Project Structure & Module Organization
 

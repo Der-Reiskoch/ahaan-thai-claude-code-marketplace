@@ -1,4 +1,7 @@
-# Adjust Skills to Naming Convention
+---
+title: Skill naming adjustment
+status: done
+---
 
 ## Problem / Context
 
@@ -16,15 +19,15 @@ Exception: `init` is an accepted short form (like `git init`, `/init`), so `todo
 
 ### Plugin Skills
 
-| Plugin | Current Name | New Name |
-|--------|--------------|----------|
-| `thai-tools` | `ask-clickthai` | `clickthai-querying` |
-| `thai-food-dictionary` | `thai-term-parser` | `thai-term-parsing` |
-| `thai-food-dictionary` | `thai-transliteration-parser` | `thai-trans-parsing` |
+| Plugin                   | Current Name                    | New Name                        |
+| ------------------------ | ------------------------------- | ------------------------------- |
+| `thai-tools`             | `ask-clickthai`                 | `clickthai-querying`            |
+| `thai-food-dictionary`   | `thai-term-parser`              | `thai-term-parsing`             |
+| `thai-food-dictionary`   | `thai-transliteration-parser`   | `thai-trans-parsing`            |
 | `thai-food-encyclopedia` | `thai-food-encyclopedia-finder` | `thaifood-encyclopedia-finding` |
-| `thai-cook-book-library` | `thai-cook-book-details` | `thai-cookbook-detailing` |
-| `khao-pad-dev-skills` | `ui-components` | `khao-component-rendering` |
-| `khao-pad-dev-skills` | `style-with-css` | `khao-styling` |
+| `thai-cook-book-library` | `thai-cook-book-details`        | `thai-cookbook-detailing`       |
+| `khao-pad-dev-skills`    | `ui-components`                 | `khao-component-rendering`      |
+| `khao-pad-dev-skills`    | `style-with-css`                | `khao-styling`                  |
 
 ## Tasks
 
@@ -46,6 +49,7 @@ Created this todo to track the skill renaming work. Local skills already follow 
 ### 2026-02-03: Names confirmed by user
 
 All new names confirmed:
+
 - `clickthai-querying` (fits the pattern)
 - `thai-term-parsing`
 - `thai-trans-parsing`
@@ -57,6 +61,7 @@ All new names confirmed:
 ### 2026-02-03: Renaming completed
 
 **Folders renamed:**
+
 - `ask-clickthai` → `clickthai-querying`
 - `thai-term-parser` → `thai-term-parsing`
 - `thai-transliteration-parser` → `thai-trans-parsing`
@@ -66,10 +71,12 @@ All new names confirmed:
 - `style-with-css` → `khao-styling`
 
 **SKILL.md updates:**
+
 - Updated `name` field in all 7 SKILL.md files
 - Added proper YAML frontmatter to khao-pad-dev-skills SKILL.md files (they were missing it)
 
 **Version bumps:**
+
 - `thai-tools`: 0.0.3 → 0.0.4
 - `thai-food-dictionary`: 0.0.3 → 0.0.4
 - `thai-food-encyclopedia`: 0.0.3 → 0.0.4
@@ -80,6 +87,7 @@ All new names confirmed:
 ### 2026-02-03: Testing completed
 
 All scripts tested successfully:
+
 - `clickthai-querying` - runs without errors
 - `thai-term-parsing` - correctly parses Thai terms
 - `thai-trans-parsing` - correctly parses transliterations
