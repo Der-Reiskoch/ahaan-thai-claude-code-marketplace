@@ -1,9 +1,6 @@
 ---
 name: thaifood-encyclopedia-finding
-description: Find Entries in the Thai Food Encyclopedia
-allowed-tools: Bash
-user-invocable: true
-argument-hint: <transliteration, summary, thainame or alternative names>
+description: This skill should be used when the user asks to "find encyclopedia entry", "search Thai food", "look up Thai dish", "find in encyclopedia", or requests searching the Thai Food Encyclopedia by transliteration, name, or alternative names.
 ---
 
 # Thai Food Encyclopedia Finder
@@ -17,7 +14,7 @@ Search for entries in the Thai Food Encyclopedia by transliteration, summary, Th
 Run the script using the skill's base directory (provided in the skill invocation header):
 
 ```bash
-bash <base_directory>/scripts/find-in-thai-food-enyclopedia.sh $ARGUMENTS
+bash <base_directory>/scripts/find-in-thai-food-encyclopedia.sh $ARGUMENTS
 ```
 
 Where `<base_directory>` is the path shown in "Base directory for this skill:" at the top of the skill invocation.
@@ -30,4 +27,12 @@ A transliteration, summary, Thai name, or alternative name to search for (e.g. "
 
 ## Output
 
-Returns a JSON with the complete entry from the Thai Food Encyclopedia
+Returns a JSON with the complete entry from the Thai Food Encyclopedia.
+
+## Additional Resources
+
+### Utility Scripts
+
+Execute encyclopedia searches using the provided script:
+
+- **`scripts/find-in-thai-food-encyclopedia.sh`** - Searches encyclopedia entries by transliteration, name, or Thai script

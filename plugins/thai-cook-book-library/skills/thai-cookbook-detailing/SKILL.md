@@ -1,9 +1,6 @@
 ---
 name: thai-cookbook-detailing
-description: Get details and recipes from a Thai cookbook in the library
-allowed-tools: Bash
-user-invocable: true
-argument-hint: <book-key>
+description: This skill should be used when the user asks to "get cookbook details", "retrieve recipes from cookbook", "look up cookbook", "get cookbook info", or requests accessing Thai cookbook information and recipes from the library.
 ---
 
 # Thai Cookbook Details
@@ -44,3 +41,11 @@ Available book keys:
 - and more...
 
 Run without arguments to see the full list.
+
+## Additional Resources
+
+### Utility Scripts
+
+Execute cookbook queries using the provided script:
+
+- **`scripts/thai-cook-book-details.sh`** - Retrieves cookbook information and recipes by book key
