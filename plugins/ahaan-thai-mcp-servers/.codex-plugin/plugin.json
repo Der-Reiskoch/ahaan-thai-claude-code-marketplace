@@ -1,0 +1,6 @@
+{
+  "name": "ahaan-thai-mcp-servers",
+  "description": "MCP servers fallback - use when context usage is not a concern",
+  "version": "0.0.3",
+  "mcpServers": "./.mcp.json"
+}
