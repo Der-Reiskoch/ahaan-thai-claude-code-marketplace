@@ -1,6 +1,6 @@
 # ahaan-thai-claude-code-marketplace
 
-ahaan-thai Marketplace for Claude Code plugins - a collection of tools for working with Thai food and recipes.
+ahaan-thai Marketplace for Claude Code and Codex plugins - a collection of tools for working with Thai food and recipes.
 
 See the [Plugins Reference](https://code.claude.com/docs/en/plugins-reference) for general information on Claude Plugins.
 
@@ -23,11 +23,27 @@ An MCP server fallback plugin is available for cases where context usage is not 
 
 ### Add the Marketplace
 
+Claude Code:
+
 ```bash
 claude plugin marketplace add https://github.com/Der-Reiskoch/ahaan-thai-claude-code-marketplace
 ```
 
+Codex:
+
+```bash
+codex plugin marketplace add Der-Reiskoch/ahaan-thai-claude-code-marketplace --ref main
+```
+
+For local development:
+
+```bash
+codex plugin marketplace add /path/to/ahaan-thai-claude-code-marketplace
+```
+
 ### Install a Plugin
+
+Claude Code:
 
 ```bash
 claude plugin install thai-food-dictionary@ahaan-thai-plugins --scope project
@@ -35,10 +51,19 @@ claude plugin install thai-food-encyclopedia@ahaan-thai-plugins --scope project
 claude plugin install thai-cook-book-library@ahaan-thai-plugins --scope project
 ```
 
+Codex:
+
+```bash
+codex plugin add thai-food-dictionary@ahaan-thai-plugins
+codex plugin add thai-food-encyclopedia@ahaan-thai-plugins
+codex plugin add thai-cook-book-library@ahaan-thai-plugins
+```
+
 Or for the MCP fallback (when context usage doesn't matter):
 
 ```bash
 claude plugin install ahaan-thai-mcp-servers@ahaan-thai-plugins --scope project
+codex plugin add ahaan-thai-mcp-servers@ahaan-thai-plugins
 ```
 
 ## Tests (Live Endpoints)
