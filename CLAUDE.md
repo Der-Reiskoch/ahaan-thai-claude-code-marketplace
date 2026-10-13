@@ -82,7 +82,7 @@ plugins/                           # Individual plugin directories
 | `thai-food-dictionary`   | Thai food dictionary skills                              | `thai-term-parsing`, `thai-trans-parsing`  |
 | `thai-food-encyclopedia` | Thai food encyclopedia skills                            | `thaifood-encyclopedia-finding`            |
 | `thai-cook-book-library` | Thai cookbook library skills                             | `thai-cookbook-detailing`                  |
-| `ahaan-thai-mcp-servers` | MCP servers fallback (use when context is not a concern) | — (MCP servers for all three data sources) |
+| `ahaan-thai-mcp-servers` | MCP servers fallback (use when context is not a concern) | — (hosted MCP server for all three data sources) |
 
 ### Plugin Structure
 

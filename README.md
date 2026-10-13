@@ -8,7 +8,7 @@ See the [Plugins Reference](https://code.claude.com/docs/en/plugins-reference) f
 
 This marketplace prioritizes **script-based skills over MCP servers**. MCP servers consume context even when not being used - their tool definitions are always loaded into the conversation. Script-based skills are more efficient as they only add to context when explicitly invoked.
 
-An MCP server fallback plugin is available for cases where context usage is not a concern and full MCP flexibility is needed.
+An MCP server fallback plugin is available for cases where context usage is not a concern and full MCP flexibility is needed. It connects to the hosted ahaan-thai MCP server at `https://mcp.ahaan-thai.de/mcp` (no local setup required).
 
 ## Available Plugins
 
@@ -17,7 +17,7 @@ An MCP server fallback plugin is available for cases where context usage is not 
 | `thai-food-dictionary`   | Thai food dictionary skills                              | `thai-term-parsing`, `thai-trans-parsing`  |
 | `thai-food-encyclopedia` | Thai food encyclopedia skills                            | `thaifood-encyclopedia-finding`            |
 | `thai-cook-book-library` | Thai cookbook library skills                             | `thai-cookbook-detailing`                  |
-| `ahaan-thai-mcp-servers` | MCP servers fallback (use when context is not a concern) | — (MCP servers for all three data sources) |
+| `ahaan-thai-mcp-servers` | MCP servers fallback (use when context is not a concern) | — (hosted MCP server for all three data sources) |
 
 ## Installation
 

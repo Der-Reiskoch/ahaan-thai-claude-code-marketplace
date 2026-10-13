@@ -1,22 +1,8 @@
 {
   "mcpServers": {
-    "thai-food-dictionary": {
-      "command": "bash",
-      "args": [
-        "/Users/jens/Projects/foodie/ahaan-thai-mcp-server/run-dictionary-server.sh"
-      ]
-    },
-    "thai-food-encyclopedia": {
-      "command": "bash",
-      "args": [
-        "/Users/jens/Projects/foodie/ahaan-thai-mcp-server/run-encyclopedia-server.sh"
-      ]
-    },
-    "thai-cookbook-library": {
-      "command": "bash",
-      "args": [
-        "/Users/jens/Projects/foodie/ahaan-thai-mcp-server/run-library-server.sh"
-      ]
+    "ahaan-thai": {
+      "type": "http",
+      "url": "https://mcp.ahaan-thai.de/mcp"
     }
   }
 }

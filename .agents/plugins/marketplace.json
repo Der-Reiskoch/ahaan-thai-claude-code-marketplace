@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "ahaan-thai-mcp-servers",
-      "version": "0.0.3",
+      "version": "0.0.4",
       "source": "./plugins/ahaan-thai-mcp-servers",
       "description": "MCP servers fallback - use when context usage is not a concern"
     },
