@@ -12,12 +12,12 @@ An MCP server fallback plugin is available for cases where context usage is not 
 
 ## Available Plugins
 
-| Plugin                     | Description                                              |
-| -------------------------- | -------------------------------------------------------- |
-| `thai-food-dictionary`     | Thai food dictionary skills                              |
-| `thai-food-encyclopedia`   | Thai food encyclopedia skills                            |
-| `thai-cook-book-library`   | Thai cookbook library skills                             |
-| `ahaan-thai-mcp-servers`   | MCP servers fallback (use when context is not a concern) |
+| Plugin                   | Description                                              | Skills                                     |
+| ------------------------ | -------------------------------------------------------- | ------------------------------------------ |
+| `thai-food-dictionary`   | Thai food dictionary skills                              | `thai-term-parsing`, `thai-trans-parsing`  |
+| `thai-food-encyclopedia` | Thai food encyclopedia skills                            | `thaifood-encyclopedia-finding`            |
+| `thai-cook-book-library` | Thai cookbook library skills                             | `thai-cookbook-detailing`                  |
+| `ahaan-thai-mcp-servers` | MCP servers fallback (use when context is not a concern) | — (MCP servers for all three data sources) |
 
 ## Installation
 
