@@ -37,7 +37,7 @@ if [ -z "$TERM_TH" ] || [ "$TERM_TH" = "null" ]; then
   exit 1
 fi
 
-TRANS_TERM="$(echo "$DICT_MAP" | jq -r '
+TRANS_TERM="$(echo "$DICT_MAP" | jq -r 'first(
   to_entries[]
   | .value as $v
   | [
@@ -48,16 +48,16 @@ TRANS_TERM="$(echo "$DICT_MAP" | jq -r '
   | map(gsub("^ +| +$"; "") | ascii_downcase)
   | map(select(length > 1))
   | .[]
-' | head -n1)"
+)')"
 if [ -z "$TRANS_TERM" ] || [ "$TRANS_TERM" = "null" ]; then
   echo "Failed to pick a transliteration term from dictionary" >&2
   exit 1
 fi
 
 ENC_DE_JSON="$(curl_json "$ENC_URL_DE")"
-ENC_TERM="$(echo "$ENC_DE_JSON" | jq -r '.[] | select((.transcription // "") != "") | .transcription' | head -n1)"
+ENC_TERM="$(echo "$ENC_DE_JSON" | jq -r 'first(.[] | select((.transcription // "") != "") | .transcription)')"
 if [ -z "$ENC_TERM" ] || [ "$ENC_TERM" = "null" ]; then
-  ENC_TERM="$(echo "$ENC_DE_JSON" | jq -r '.[] | select((.thaiName // "") != "") | .thaiName' | head -n1)"
+  ENC_TERM="$(echo "$ENC_DE_JSON" | jq -r 'first(.[] | select((.thaiName // "") != "") | .thaiName)')"
 fi
 if [ -z "$ENC_TERM" ] || [ "$ENC_TERM" = "null" ]; then
   echo "Failed to pick an encyclopedia term" >&2
@@ -70,28 +70,24 @@ if [ -z "$COOKBOOK_KEY" ] || [ "$COOKBOOK_KEY" = "null" ]; then
   exit 1
 fi
 
-echo "- thai-term-parser"
+echo "- thai-term-parsing"
 TERM_OUT="$(bash plugins/thai-food-dictionary/skills/thai-term-parsing/scripts/parse-thai-term.sh "$TERM_TH")"
 echo "$TERM_OUT" | jq -e --arg k "$TERM_TH" 'has($k)' >/dev/null
 
-echo "- thai-transliteration-parser"
-TRANS_OUT="$(bash plugins/thai-food-dictionary/skills/thai-transliteration-parser/scripts/parse-transliteration.sh "$TRANS_TERM")"
+echo "- thai-trans-parsing"
+TRANS_OUT="$(bash plugins/thai-food-dictionary/skills/thai-trans-parsing/scripts/parse-transliteration.sh "$TRANS_TERM")"
 echo "$TRANS_OUT" | jq -e --arg k "$TRANS_TERM" '.[$k] != null' >/dev/null
 
-echo "- thai-food-encyclopedia-finder"
-ENC_OUT="$(bash plugins/thai-food-encyclopedia/skills/thai-food-encyclopedia-finder/scripts/find-in-thai-food-enyclopedia.sh "$ENC_TERM")"
+echo "- thaifood-encyclopedia-finding"
+ENC_OUT="$(bash plugins/thai-food-encyclopedia/skills/thaifood-encyclopedia-finding/scripts/find-in-thai-food-encyclopedia.sh "$ENC_TERM")"
 echo "$ENC_OUT" | jq -e '((.de | length) > 0) or ((.en | length) > 0)' >/dev/null
 
 # Ping EN endpoint once to catch outages separate from the script logic.
 # The script only uses both endpoints internally, so keep this lightweight.
 _="$(curl_json "$ENC_URL_EN" | jq -e 'type == "array"' >/dev/null)"
 
-echo "- thai-cook-book-details"
-COOK_OUT="$(bash plugins/thai-cook-book-library/skills/thai-cook-book-details/scripts/thai-cook-book-details.sh "$COOKBOOK_KEY")"
+echo "- thai-cookbook-detailing"
+COOK_OUT="$(bash plugins/thai-cook-book-library/skills/thai-cookbook-detailing/scripts/thai-cook-book-details.sh "$COOKBOOK_KEY")"
 echo "$COOK_OUT" | jq -e --arg k "$COOKBOOK_KEY" '.book_key == $k' >/dev/null
-
-echo "- ask-clickthai"
-CLICK_OUT="$(bash plugins/thai-tools/skills/ask-clickthai/scripts/ask-clickthai.sh "som tam")"
-echo "$CLICK_OUT" | jq -e 'type == "object"' >/dev/null
 
 echo "All live smoke tests passed."

@@ -22,7 +22,7 @@
     },
     {
       "name": "thai-food-encyclopedia",
-      "version": "0.0.4",
+      "version": "0.0.5",
       "source": "./plugins/thai-food-encyclopedia",
       "description": "Adds thai food encyclopedia skills to your project"
     },
